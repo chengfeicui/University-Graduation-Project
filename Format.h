@@ -1,5 +1,6 @@
 #ifndef FORMAT_H
 #define FORMAT_H
+
 // 创建数据包格式，定义每种格式的结构体
 
 // 54、一共有三种类型的长度，1字节，2字节，4字节，这里为了便于区分，用typedef

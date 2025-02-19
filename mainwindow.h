@@ -1,6 +1,8 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+// 主线程
+
 #include <QMainWindow>
 #include "pcap.h"
 #include "capture.h"
@@ -18,12 +20,13 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    // 5、定义测试网卡的成员函数
+    // 5、显示网卡
     void showNetworkCard();
     // 16、开始写抓包
     int capture();
 
 private slots:
+    // Qt的槽函数，用于处理界面元素的事件
     void on_comboBox_currentIndexChanged(int index);
     void on_tableWidget_cellClicked(int row, int column);
     void on_lineEdit_returnPressed();
@@ -34,7 +37,7 @@ private slots:
 public slots:
     void handleMessage(DataPackage data);
 private:
-    Ui::MainWindow *ui;
+    Ui::MainWindow *ui; // 最顶上的指针
     pcap_if_t *all_devices; // 1、为了测试网卡，定义指向所有设备的指针，存储的数据结构为链表
     pcap_if_t *device;  // 2、定义指针指向当前的网卡
     pcap_t *pointer;  // 3、打开设备的描述符

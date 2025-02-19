@@ -1,3 +1,5 @@
+// 单独创建此类来管理选定数据包
+
 #include "datapackage.h"
 #include <QMetaType>
 #include <QVector>

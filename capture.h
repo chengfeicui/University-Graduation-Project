@@ -1,6 +1,8 @@
 #ifndef CAPTURE_H
 #define CAPTURE_H
 
+// 子线程
+
 #include <QThread>
 #include <Format.h>
 #include <QQueue>

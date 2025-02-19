@@ -1,11 +1,12 @@
 #ifndef DATAPACKAGE_H
 #define DATAPACKAGE_H
 
+// 单独创建此类来管理选定数据包
+
 #include <QString>
 #include "Format.h"
 
 
-// 单独创建此类来管理选定数据包
 
 
 class DataPackage

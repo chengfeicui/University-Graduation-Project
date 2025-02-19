@@ -1,3 +1,5 @@
+// 子线程
+
 #include "capture.h"
 #include <QDebug>
 #include <QString>
