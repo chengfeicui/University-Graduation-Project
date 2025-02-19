@@ -207,8 +207,7 @@ MainWindow::~MainWindow()
 // 6、实现mainWindow.h里定义的测试网卡的成员函数
 void MainWindow::showNetworkCard(){
     // 7、获取所有的网卡
-    int n = pcap_fin'
-            Zdalldevs(&all_devices,errbuf);
+    int n = pcap_findalldevs(&all_devices,errbuf);
     ui->comboBox->clear();
     // 8、若获取失败，前端comboBOX就显示错误信息
     if(n == -1){

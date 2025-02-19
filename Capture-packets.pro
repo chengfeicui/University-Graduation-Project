@@ -18,14 +18,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     capture.cpp \
     datapackage.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    main.cpp
 
 HEADERS += \
     Format.h \
     capture.h \
     datapackage.h \
-    mainwindow.h \
-    =\][
+    mainwindow.h
 
 FORMS += \
     mainwindow.ui
