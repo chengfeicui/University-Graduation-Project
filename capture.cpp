@@ -1,5 +1,7 @@
 // 子线程
 
+// 测试提交
+
 #include "capture.h"
 #include <QDebug>
 #include <QString>
